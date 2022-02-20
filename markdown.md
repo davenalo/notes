@@ -19,5 +19,5 @@ _texto subrayado_ y más *texto subrayado*
 print('Hello World')
 ```
 
-[otra_nota_md](mARKDOWN2nota.md)
+[otra_nota_md](nota.md)
 
