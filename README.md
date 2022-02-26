@@ -1,4 +1,4 @@
-These notes are only personal notes about some technologies, nothing special, bad redacted, all the knowledge is from another sources, and the notes don't bring nothing new to the table.
+These notes are only personal notes about some technologies, nothing special, bad redacted, all the knowledge is from another sources, and the notes don't bring new things to the table.
 
 So, why i take it?
 
