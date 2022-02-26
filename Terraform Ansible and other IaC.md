@@ -104,3 +104,67 @@ IaC trend: gitOPS
 
 you must reviewing andtest your terraform states!!!! make teh same you do with code.
 
+---
+---
+---
+---
+
+Ansible
+
+Ansible automate IT tasks using YAML file, installing the agent only in the control machine (and can work on the target servers, is "agentless")
+
+Ansible works with Modules; do their job on the target server and are removed. The modulo made a very specific task "install nginx server" or "start docker contaniner", etc.
+
+### exemple Jenkins Module
+
+```YAML
+# Create a jenkins job using basic authentication
+
+- jenkings_job:
+    config: "{{ lookup("file", "templates/test.xml") }}"
+    name: test
+    password: admin
+    url: http://localhost:8080
+    user: admin
+
+# Delete a jenkins job using the token
+
+- jenkins_job:
+    name: test
+    token: blablablablabla
+    state: absent
+    url: localblablabla
+    user: admin
+    
+```
+
+You need make the modules and the correct SEQUENCE for make their work well.
+
+Ansible Playbooks make the tasks easy
+
+```
+hosts: databases
+remote_user: root
+task:
+    Modules:
+        Arguments of that module:
+    Modules:
+        Arguments of that module: 
+    Modules:
+        Arguments of that module:       
+
+```
+
+you can use "vars" to make variables and therefore easy the modules read/write process for humans.
+
+Playbook: can contain many plays, tasks, on diferents hosts.
+
+The hosts are configured with the "ansible hosts file" which contain a "Inventory" it is: all the machines involved in tasks executions.
+###### example
+```
+[webservers] #multiple url or ip
+web1.myserver.com
+[databases]
+10.24.0.7
+```
+
