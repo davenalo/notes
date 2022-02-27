@@ -5,3 +5,4 @@ basically is a file with the config options, env variables, the directories to c
 but with Ansible you can make morethings. so is better practice. for example you can make tasks for the HOST where the docker container is running.
 
 
+.
