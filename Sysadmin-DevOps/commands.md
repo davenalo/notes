@@ -77,12 +77,23 @@ sort -n -> sort numerically
 -----
 
 lsof -> open files list
-
+nslookup - Name Server Lookup (DNS Information)
 
 -----
 
 id -> information about users
 who -> who has an open session
+w -> same as who but with more info
+uname -a -> info about the system
+---
+du
+free
+df -> disk free
+```
+df -h
+```
+uptime
+last -> lasts boots of the system
 
 --
 
@@ -122,6 +133,38 @@ dd inputfile = /dev... outputfile = /dev...
 free -> memory on the system
 
 ----
+
+passwd -> change your password
+
+passwd -e user -> if runned as root, expires the password of the user and obligate them to choose another one
+
+----
+
+man
+info
+tldr
+
+apropos -> used to search a command which you don't know the name.
+
+```
+apropos copy
+
+
+#Display a list of "copy" related commands
+```
+---
+
+mount
+
+---
+
+head
+tail
+
+---
+
+
+
 
 
 
