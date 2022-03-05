@@ -66,4 +66,63 @@ visudo
 
 in this file will be the storage of the group permissions
 
+----------
+
+sort command 
+
+sort -r -> reverse order
+sort -f -> insensitive capitalization
+sort -n -> sort numerically
+
+-----
+
+lsof -> open files list
+
+
+-----
+
+id -> information about users
+who -> who has an open session
+
+--
+
+tar -xvf tar-file
+
+---
+
+```
+cut -c1-2 file
+#corta la por columnas, hasta dos caracteres
+```
+
+----
+
+watch -> returns every 2 seconds the output from an target command
+
+---
+eval
+
+---
+
+history
+
+```
+!42
+```
+
+---
+
+dd
+
+```
+dd inputfile = /dev... outputfile = /dev...
+```
+---
+
+free -> memory on the system
+
+----
+
+
+
 
