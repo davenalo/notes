@@ -163,7 +163,35 @@ tail
 
 ---
 
+dig
 
+dig is a succesor to the nslookup and host commands; and is bundled with the BIND name server.
+
+> BIND: Berkeley internet name domain; anteriormente daemon instead domain, pero bueno, sus cosas. Es el servidor DNS más comúnmente utilizado en Internet.
+
+dig @8.8.4.4. twitch.tv #busca en tal dns-server tal url
+
+
+dig +tcp @8.8.8.8 twitch.tv # dig specifically in the tcp protocol response
+dig +notcp #only UDP protocol responses
+
+dig twitch.tv +nocomment +nostats +short #works as a non-verbose output solution
+
+dig +shot +trace @8.8.4.4 URL
+
+dig -f file-path #take a file as an input
+
+dig google.com AAAA #find the IPv6 response
+
+dig has a dotfile ~/.digrc, example:
+
+> +nocomments +recurse +multiline +nostats +time=1 +retry=5
+
+--
+
+
+
+--
 
 
 
