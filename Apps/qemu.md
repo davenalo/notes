@@ -11,6 +11,7 @@ qemu-img create -f qcow2 Image.img 10G
 Launching the VM:
 
 qemu-system-x86_64 -enable-kvm -cdrom OS_ISO.iso -boot menu=on -drive file=Image.img -m 2G
+> flag -m 2G se refiere a la memoria ram
 
 (-enable-kvm enables KVM, -cdrom selects an iso to load as a cd, -boot menu=on enables a boot menu, -drive file= selects a file for the drive, -m sets the amount of dedicated RAM)
 (Remember! Ctrl + Alt + G to exit capture, Ctrl + Alt + F to fullscreen!)
@@ -21,7 +22,7 @@ Basic performance options
 
  -cpu host (sets the CPU to the hosts' CPU)
  -smp 2 (sets the numbers of cores)
- >creo que no son cores, sino hilos. "los hilos que se van a usar por cada núcleo", hay que mirarlo bien.
+ >creo que no son cores, sino hilos. "los hilos que se van a usar por cada núcleo, pero les llaman cpu", hay que mirarlo bien, pero es lo mismo en virtual mmachine manager, te pone "cuantas cpus? tienes 8 disponibles" por ejemplo.
 
 Basic Graphics Acceleration
 
@@ -33,11 +34,13 @@ the -vga option can be used to specify one of various vga card emulators:
 
 "virtio" works much better and supports some 3D emulation:
 
--vga virtio -display sdl,gl=on
+-vga virtio -display sdl (or gtk) ,gl=on
 
 •Site: https://denshi.org
 
 - el vídeo es: https://www.youtube.com/watch?v=AAfFewePE7c
+
+--
 
 otros recursos:
 
