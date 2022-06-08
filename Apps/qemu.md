@@ -44,3 +44,16 @@ otros recursos:
 https://www.unixmen.com/gnome-boxes-a-front-end-tool-for-qemu-and-kvm/
 
 https://www.qemu.org/
+
+--
+
+From Mental Outlaw: https://www.youtube.com/watch?v=wxxP39cNJOs
+
+sudo pacman -S qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat libguestfs
+
+non systemd systems needs libvirt-openrc too (or other init system) and needs extra configuration
+
+systemctl start libvirtd
+systemctl enable libvirtd
+
+Already on wm manager: enable XML edition, be sure QEMU/KVM is connected
